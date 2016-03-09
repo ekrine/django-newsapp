@@ -1,0 +1,13 @@
+<hr/>
+<h3>What to Read Next</h3>
+<div class="row">
+	{% for item in nextArticleList %}
+	    <div class="col-xs-6 col-sm-3">
+			<a href="{% url 'main_article' item.id %}">
+				<img src="{{ MEDIA_URL }}articles/{{item.hero_image}}" class="img-responsive"/>
+			</a>
+	        <h5>{{item.title}}</h5>
+	    	<div><a href="{% url 'main_article' item.id %}">Read</a></div>
+	    </div>
+    {% endfor %}
+</div>

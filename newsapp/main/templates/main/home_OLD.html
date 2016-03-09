@@ -1,0 +1,17 @@
+{% load staticfiles %}
+
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'styles/application.min.css' %}">
+</head>
+<body>
+	<h1>Home.html template</h1>
+
+	{{ message }}
+
+	{% static 'js/application.js' %}
+
+	<script type="text/javascript" src="{% static 'js/application.min.js' %}"></script>
+
+</body>
+</html>

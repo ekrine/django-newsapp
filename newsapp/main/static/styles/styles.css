@@ -1,0 +1,46 @@
+ul.articleList {
+	list-style:none;
+	padding:10px;
+	margin:0;
+}
+
+.jumbotron .h1, .jumbotron h1 {
+    font-size: 43px;
+}
+
+.headerImage
+{
+	margin:15px 0px;
+}
+.nav>li>a>img {
+	max-width: 100%; /*fixes image with*/ 
+}
+
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+	.navbar-header {
+    	 float: none; 
+	}
+
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+
+}
+

@@ -1,0 +1,11 @@
+<h1>{{article.title}}</h1>
+<p>Published {{article.publication_date|date:"d M y"}}
+	{% if article.author %}
+ 		| By {{article.author}}
+	{% endif %}
+</p>
+
+
+<img src="{{ MEDIA_URL }}articles/{{article.hero_image}}" class="img-responsive"/>
+<p>{{article.body_text}}</p>
+<a href="{% url 'main_article' article.id %}" class="btn btn-primary btn-lg">Read more</a>

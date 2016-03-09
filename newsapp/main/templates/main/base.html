@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+<html>
+<head>
+	<title>{{meta_title}}</title>
+	<meta name="description" content="{{meta_desc}}"/>
+	<meta name="keywords" content="{{meta_keywords}}"/>
+	<link rel="stylesheet" href="{% static 'styles/application.min.css' %}">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-3">
+				{% include "main/_navigation.html" %}
+			</div>
+			<div class="col-xs-12 col-sm-9">
+				{% block body %}{% endblock body %}
+
+				{% include "main/_whattoreadnext.html" with nextArticleList=nextArticleList %}
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="{% static 'js/application.min.js' %}"></script>
+</body>
+</html>

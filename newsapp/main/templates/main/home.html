@@ -1,0 +1,19 @@
+{% extends "main/base.html" %}
+
+{% block body %}
+	<div class="jumbotron">
+		{% include "main/article_preview.html" with article=article %}
+	</div>
+
+	<h2>Current News</h2>
+
+	<ul class="articleList">
+	{% for x in articleList %}    
+        <li>
+        	<h3>{{x.title}}</h3>
+        	<p>{{x.body_text}}</p>
+        	<a href="{% url 'main_article' x.id %}" class="btn btn-default">Read more</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock body %}
