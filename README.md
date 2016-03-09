@@ -2,6 +2,8 @@
 
 News App is a simple 2 page app created in Django 1.9.4 on Python 3 and SQLite to demonstrate knowledge of Python, Django, Bootstrap, and Grunt.
 
+The database contains a number of sample news articles along with sample images within the newsapp/media directory.
+
 ## Overview
 
 The app is setup with a 'NewsApp' project and a 'Main' app which is the main web application.
@@ -15,15 +17,8 @@ The app is all setup within a virtual enviroment. To run it in development mode:
 - Navigate to newsapp/newsapp
 - python manage.py runserver
 
+## Admin
 
-## History
+The site admin can be accessed with /admin
 
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
-
-## License
-
-TODO: Write license
+Superuser: admin pw: EnterTheDragon
